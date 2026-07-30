@@ -1,0 +1,18 @@
+# 가상환경 폴더 제외 (가장 중요!)
+venv/
+.venv/
+env/
+
+# 파이썬 캐시 파일 및 컴파일 파일 제외
+__pycache__/
+*.pyc
+*.pyo
+
+# PyInstaller 등 빌드 결과물 제외 (추후 exe로 만들 때 대비)
+build/
+dist/
+*.spec
+
+# IDE 및 설정 파일 제외 (VS Code, PyCharm 등)
+.vscode/
+.idea/
