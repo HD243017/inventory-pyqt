@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QFormLayout, 
                              QLineEdit, QPushButton, QMessageBox)
 from db_helper import DBHelper, DB_CONFIG
+import re
 
 class RegisterDialog(QDialog):
     def __init__(self, parent=None):
@@ -41,6 +42,12 @@ class RegisterDialog(QDialog):
 
         if not uid or not pw or not name or not email:
             QMessageBox.warning(self, "오류", "모든 항목을 빠짐없이 입력하세요.")
+            return
+
+        # 이메일 유효성 검사
+        email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+        if not re.match(email_pattern, email):
+            QMessageBox.warning(self, "입력 오류", "유효한 이메일이 아닙니다.")
             return
 
         # 회원가입 시도
