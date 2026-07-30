@@ -1,0 +1,11 @@
+관리자 ID/PASS
+
+admin / admin123
+
+
+
+user 기본 아이디 및 비번
+
+user01 / pass01
+user02 / pass02
+user03 / pass03

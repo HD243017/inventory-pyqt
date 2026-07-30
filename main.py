@@ -23,7 +23,7 @@ if __name__ == "__main__":
         else:
             # 일반 유저일 경우
             window = UserWindow(user, db_instance)
-            
+             
         window.show()
         sys.exit(app.exec_())
         
