@@ -4,7 +4,7 @@ import pymysql
 DB_CONFIG = dict(
     host="localhost",
     user="root",
-    password="Azsx06^06^", 
+    password="azsx1234", 
     database="inventory_db",
     charset="utf8"
 )
