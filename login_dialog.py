@@ -59,6 +59,10 @@ class RegisterDialog(QDialog):
             QMessageBox.critical(self, "실패", "회원가입에 실패\n아이디 중복 확인")
 
 
+
+
+
+
 class LoginDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
